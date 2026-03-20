@@ -48,6 +48,6 @@ h1 {
 }
 
 body {
-  background-color: #f0f4f8; /* color claro */
+  background-color: #d5e5f5; /* color claro */
 }
 </style>
