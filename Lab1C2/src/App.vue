@@ -41,3 +41,13 @@ function clearAll() {
     @clear-all="clearAll"
   />
 </template>
+
+<style scoped>
+h1 {
+  color: #2f80ed;
+}
+
+body {
+  background-color: #f0f4f8; /* color claro */
+}
+</style>

@@ -60,8 +60,8 @@ function addTournament() {
       <label>Fecha</label>
       <input type="date" v-model="date" />
 
-      <label>Premio(colocar $ primero y un minimo de $100)</label>
-      <input v-model="prize" placeholder="$200 o trofeo" />
+      <label>Premio (ej: $200 o trofeo)</label>
+      <input v-model="prize" />
 
       <label>Cupos</label>
       <input type="number" min="4" max="64" v-model.number="slots" />
@@ -73,10 +73,27 @@ function addTournament() {
 </template>
 
 <style scoped>
-.card { background:#fff; border:1px solid #ddd; border-radius:12px; padding:14px; margin-bottom:12px; }
+.card {
+  background: #20232a;
+  border: 2px solid #2f80ed;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+h2 { color: #2f80ed; }
 label { display:block; margin-top:10px; font-weight:600; }
-input, select { width:100%; padding:6px; margin-top:4px; border-radius:6px; border:1px solid #bbb; }
-button { margin-top:12px; padding:8px 12px; border-radius:8px; border:none; background:#2f80ed; color:white; cursor:pointer; }
+input, select {
+  width:100%; padding:8px; margin-top:4px;
+  border-radius:6px; border:1px solid #444;
+  background:#2a2d3a; color:#fff;
+}
+button {
+  margin-top:12px; padding:10px 14px;
+  border-radius:8px; border:none;
+  background:#2f80ed; color:white;
+  cursor:pointer; font-weight:bold;
+}
 button:disabled { opacity:.5; cursor:not-allowed; }
-.error { color:#c0392b; margin-top:10px; }
+.error { color:#e74c3c; margin-top:10px; }
 </style>
